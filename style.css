@@ -1,0 +1,555 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+        box-sizing: border-box;
+}
+
+.logo{
+ background-color: #45a049;
+    
+}
+
+.banner{
+        background-color: #45a049;
+
+}
+
+.nav-links {
+        background-color: #3D2914;
+        text-align: right;
+}
+
+.nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 10px 15px;
+        position: relative;
+}
+
+.nav-links ul li a {
+        color: rgb(49, 4, 250);
+        text-decoration: none;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: right;
+        text-decoration: underline;
+}
+
+
+
+/* grid system */
+
+.col-1 { width: 8.33%;}
+.col-2 {width: 16.66%;} 
+.col-3 {width: 24.99%;} 
+.col-4 {width: 33.32%;} 
+.col-5 {width:  41.65%;}
+.col-6 {width: 49.98%;}
+.col-7 {width: 58.31%;}
+.col-8 {width: 66.64%;}
+.col-9 {width: 74.97%;}
+.col-10 {width: 83.3%;}
+.col-11 {width: 91.63%;}
+.col-12 {width: 99.96%;}
+
+
+.row::after {
+        content: "";
+        clear: both;
+        display: table;
+}
+[class*="col-"] {
+        float: left;
+        padding: 15px;
+        /* border: 1px solid black; */
+}
+
+/* Your existing CSS code here */
+
+/* Add some styles for responsive navigation */
+.menu-button {
+  display: none; /* Hide the menu button by default */
+  cursor: pointer;
+}
+
+/* Show/hide menu for smaller screens */
+@media screen and (max-width: 600px) {
+  .nav-links {
+      display: none; /* Hide the navigation links by default on smaller screens */
+  }
+
+  .menu-button {
+      display: block; /* Show the menu button on smaller screens */
+      text-align: right;
+      padding: 10px;
+      background-color: #3D2914;
+      color: #fff;
+  }
+
+  .nav-links.show {
+      display: block; /* Show the navigation links when the menu is toggled */
+      text-align: right;
+      background-color: #3D2914;
+  }
+}
+
+
+/* Your existing CSS code here */
+
+/* Responsive styling */
+
+.profile-pic-container {
+  text-align: center; /* Center the image within its container */
+}
+
+.profile-pic {
+  max-width: 100%;
+  height: auto; /* Maintain the aspect ratio */
+  /* border-radius: 50%; Optional: Make the image round (for a circular profile picture) */
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+      width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  .logo img {
+      width: 100%;
+      height: auto;
+  }
+
+  .nav-links ul li {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 5px;
+  }
+
+  .banner img {
+      width: 100%;
+      height: auto;
+  }
+
+  .row {
+      display: block;
+  }
+
+  .col-6 {
+      width: 100%;
+  }
+
+  .heading-3 {
+      margin-right: 0;
+  }
+
+  .map {
+      height: 300px; /* Adjust height as needed */
+  }
+
+  .footer {
+      margin-right: 0;
+  }
+}
+
+
+
+/* grid system */
+
+
+.text-conter{
+        text-align: center;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.heading-1{
+        font-size: 40px;
+        text-align: center;
+        font-weight: bold;
+        text-decoration: underline;
+        border: 1px solid red;
+        margin-right:auto;
+        padding: 5px;
+        background-color: rgb(0, 0, 0);
+        color: azure;
+        text-shadow: 4px 4px 4px #c56060;
+
+}
+
+.para{
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        font-weight: bold;
+}
+
+
+
+/* Footer Start */
+.footer {
+  text-align: right;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  /* Adjust styles for smaller screens (e.g., mobile devices) */
+  .footer {
+      padding-top: 10px;
+      font-size: 14px;
+  }
+}
+.heading-3{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 26px;
+        font-weight: bold;
+        text-decoration: underline;
+        border: 1px solid red;
+        margin-right: 65%;
+        padding: 3px;
+        background-color: #3D2914;
+        color: azure;
+
+
+}
+
+
+
+
+
+/* Style inputs */
+
+input[type=tel], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+}
+
+input[type=email], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+}
+
+input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      /* Style the container/contact section */
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 10px;
+      }
+      
+      /* Create two columns that float next to eachother */
+      .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+
+
+      .map{
+        height: 100%;
+        width: 100%;
+        inset: -0;
+        font-variant: small-caps ;
+
+
+      }
+
+.para-2{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        text-decoration: underline;
+        color: #45a049;
+        /* background-color: #3D2914; */
+
+
+}
+
+*{
+        background-color: bisque;
+
+}
+
+
+
+/* font-family: "Miniver", cursive; */
+
+
+
+/* Responsive Web Code */
+
+/* Mobile first media query */
+@media only screen and (max-width: 600px) {
+        /* Add your styles for mobile devices here */
+        body {
+          font-size: 14px;
+        }
+        .container {
+          width: 100%;
+        }
+        .header {
+          padding: 10px;
+        }
+        .menu {
+          display: none;
+        }
+        .content {
+          padding: 10px;
+        }
+        .footer {
+          padding: 10px;
+        }
+      }
+      
+      /* Tablet and desktop media query */
+      @media only screen and (min-width: 601px) {
+        /* Add your styles for tablet and desktop devices here */
+        body {
+          font-size: 16px;
+        }
+        .container {
+          width: 80%;
+          margin: 0 auto;
+        }
+        .header {
+          padding: 20px;
+        }
+        .menu {
+          display: block;
+        }
+        .content {
+          padding: 20px;
+        }
+        .footer {
+          padding: 20px;
+        }
+      }
+
+
+
+
+/* Pricing Page Styling */
+
+/* Additional styles for new pricing cards */
+
+.pricing-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pricing-card h2 {
+  font-size: 24px;
+  color: #333;
+  background-color:yellowgreen;
+}
+
+.pricing-card .price {
+  font-size: 20px;
+  color: #45a049;
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.pricing-card ul li {
+  margin-bottom: 8px;
+}
+
+.pricing-card button {
+  background-color: #45a049;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.pricing-card button:hover {
+  background-color: #04AA6D;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.heading-4{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 24px;
+        color: #3b2b74;
+        background-color: yellow;
+        text-align: center;
+        padding: 5px;
+        margin-left: 25%;
+        margin-right: 25%;
+
+}
+
+
+
+/* Servicing Page */
+
+/* Additional styles for new service cards */
+.service-card {
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* text-align: center; */
+}
+
+.service-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+.service-card h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 16px;
+}
+
+.service-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.service-card li {
+  padding: 5px 0;
+  color: #777;
+}
+
+
+}
+
+
+.heading-2{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color:#aaa;
+  background-color: rgb(34, 34, 3);
+  text-align: center;
+  padding: 5px;
+  padding-top: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+
+/* You can customize the styling for each new service card individually */
+
+
+ 
+/* Profile.html */
+    /* Common styles for all screen sizes */
+    .profile-pic-container {
+        text-align: center;
+    }
+
+    .profile-pic {
+        max-width: 100%;
+        height: auto;
+        border-radius: 2%;
+    }
+
+    /* Styles for smaller screens (e.g., mobile) */
+    @media only screen and (max-width: 600px) {
+        .profile-info {
+            font-size: 14px; /* Adjust font size for smaller screens */
+        }
+    }

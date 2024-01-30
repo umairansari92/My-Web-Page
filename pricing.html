@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataVerse Technologies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<!-- Add a menu button -->
+<div class="menu-button" onclick="toggleMenu()">☰ Menu</div>
+
+ <!-- header start -->
+ <div class="logo">
+    <img src="images/logo (4).jpg" width="200"  alt="logo">
+</div>
+<nav>
+    <div class="nav-links">
+        <ul>            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </div>
+</nav>
+<div class="banner">
+    <img src="images/Banner.gif" width="100%" height="400px" alt="Banner">
+</div>
+<!-- header end -->
+
+
+    <!-- Main Web start -->
+
+
+    <!-- Navigation and Banner (similar to your existing structure) -->
+
+    <!-- Main Web start -->
+    <div class="text-center">
+        <h1 class="heading-1">Our Pricing</h1>
+    </div>
+
+    <div class="row">
+        <!-- Pricing Card 1 -->
+        <div class="col-4">
+            <div class="pricing-card">
+                <h2>Basic Web Development</h2>
+                <p class="price">$600</p>
+                <ul>
+                    <li>Up to 5 pages</li>
+                    <li>Basic design</li>
+                    <li>Standard support</li>
+                </ul>
+                <button onclick="openContactPage()">Contact Us</button>
+            </div>
+        </div>
+
+        <!-- Pricing Card 2 -->
+        <div class="col-4">
+            <div class="pricing-card">
+                <h2>Pro Web Development</h2>
+                <p class="price">$1100</p>
+                <ul>
+                    <li>Up to 10 pages</li>
+                    <li>Custom design</li>
+                    <li>Premium support</li>
+                </ul>
+                <button onclick="openContactPage()">Contact Us</button>
+            </div>
+        </div>
+        <div class="row">
+    
+            <!-- Pricing Card 5 -->
+            <div class="col-4">
+                <div class="pricing-card">
+                    <h2>Tailwind CSS Styling</h2>
+                    <p class="price">$350</p>
+                    <ul>
+                        <li>Responsive design</li>
+                        <li>Tailwind CSS implementation</li>
+                        <li>Style customization</li>
+                    </ul>
+                    <button onclick="openContactPage()">Contact Us</button>
+                </div>
+            </div>
+    
+            <!-- Pricing Card 7 -->
+            <div class="col-4">
+                <div class="pricing-card">
+                    <h2>Bootstrap Framework</h2>
+                    <p class="price">$450</p>
+                    <ul>
+                        <li>Bootstrap integration</li>
+                        <li>Mobile-first development</li>
+                        <li>Bootstrap components</li>
+                    </ul>
+                    <button onclick="openContactPage()">Contact Us</button>
+                </div>
+            </div>
+    
+            <!-- Pricing Card 2 -->
+            <div class="col-4">
+                <div class="pricing-card">
+                    <h2>Chatbot Development</h2>
+                    <p class="price">$800</p>
+                    <ul>
+                        <li>Custom chatbot</li>
+                        <li>Integration options</li>
+                        <li>24/7 support</li>
+                    </ul>
+                    <button onclick="openContactPage()">Contact Us</button>
+                </div>
+            </div>
+    
+            <!-- Pricing Card 6 -->
+            <div class="col-4">
+                <div class="pricing-card">
+                    <h2>Frontend Development</h2>
+                    <p class="price">$600</p>
+                    <ul>
+                        <li>Interactive user interfaces</li>
+                        <li>JavaScript, HTML, CSS</li>
+                        <li>Compatibility testing</li>
+                    </ul>
+                    <button onclick="openContactPage()">Contact Us</button>
+                </div>
+            </div>
+    
+            <!-- Pricing Card 3 -->
+            <div class="col-4">
+                <div class="pricing-card">
+                    <h2>HTML, CSS, JavaScript Bundle</h2>
+                    <p class="price">$1000</p>
+                    <ul>
+                        <li>Full web development stack</li>
+                        <li>Responsive design</li>
+                        <li>Comprehensive support</li>
+                    </ul>
+                    <button onclick="openContactPage()">Contact Us</button>
+                </div>
+            </div>
+    
+            <!-- Pricing Card 1 -->
+            <div class="col-4">
+                <div class="pricing-card">
+                    <h2>Web Development</h2>
+                    <p class="price">$200</p>
+                    <ul>
+                        <li>Static and dynamic websites</li>
+                        <li>Up to 2 pages </li>
+                        <li>Responsive design</li>
+                        <li>Custom features</li>
+                    </ul>
+                    <button onclick="openContactPage()">Contact Us</button>
+                </div>
+            </div>
+    
+        </div>
+    <div>
+        <h1 class="heading-1">For More Queries</h1>
+        <h3 class="heading-4">Feel free to reach out for any queries or custom packages.</h3>
+        <p class="para">Customization available refers to the ability to modify or tailor a product or service according to specific preferences or requirements. This can include anything from personalized design options to individualized features or functions. </p>
+
+           <p class="para"> For example, In the context of product manufacturing, customization available may refer to the ability to choose specific colors, materials, or sizes for a product.</p>
+    </div>
+       <!-- Contact Section -->
+    <div class="text-center">
+        <h2></h2>
+        <button onclick="openContactPage()">Contact Us</button>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2>Contact Us</h2>
+            <!-- Your contact form or details can be added here -->
+        </div>
+    </div>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
+        <!-- Add more pricing cards -->
+
+    </div>
+
+    <!-- Contact Section
+    <div class="text-center">
+        <h2 class="heading-1">For More Queries</h2>
+        <button onclick="openContactModal()">Contact Us</button>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2>Contact Us</h2>
+            <p class="para">Feel free to reach out for any queries or custom packages.</p>
+            <!-- Your contact form or details can be added here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+<!-- Footer start -->
+<nav>
+    <div class="nav-links">
+        <div class="footer">
+           
+        
+        <ul>            
+            <li><a href="https://www.facebook.com/munna.lalokhaiti">Facebook</a></li>
+            <li><a href="https://twitter.com/umairansari92">Twitter</a></li>
+            <li><a href="https://www.instagram.com/umair.ansari.92/">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/umair-ansari-a55251b2/">Linked In</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+<div> 
+    <p>All right reserve Copyright &copy;: 2024</p>
+</div>
+
+<!-- Footer End -->
+
+</body>
+</html> -->
+
+    <!-- <div class="text-center">
+        <h1 class="heading-1">Our Pricing</h1>
+    </div> -->
+
+
+
+<!-- Additional styles for new cards in style.css -->
+
+<!-- /* Additional styles for new pricing cards */ -->
+
+
+<!-- /* You can customize the styling for each new card individually */ -->
